@@ -1,0 +1,66 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+}
+h1 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+form input {
+    flex: 1 1 150px;
+    padding: 8px;
+}
+form button {
+    padding: 8px 12px;
+}
+#filters {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.filter.active {
+    background-color: #333;
+    color: #fff;
+}
+#product-list {
+    list-style: none;
+    padding: 0;
+}
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    animation: fadeIn 0.3s ease;
+}
+.product-item.bought {
+    text-decoration: line-through;
+    color: #888;
+}
+#stats {
+    margin-top: 20px;
+}
+/* Animaciones */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@media (max-width: 600px) {
+    .container { padding: 10px; }
+    form input { flex: 1 1 100%; }
+}
